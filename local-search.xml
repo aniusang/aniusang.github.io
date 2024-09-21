@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>测试文章</title>
+    <link href="/2024/09/21/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/"/>
+    <url>/2024/09/21/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
+    
+    <content type="html"><![CDATA[<h2 id="树莓派openwrt连接热点"><a href="#树莓派openwrt连接热点" class="headerlink" title="树莓派openwrt连接热点"></a>树莓派<code>openwrt</code>连接热点</h2><h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arduino">vi /etc/config/wireless<br></code></pre></td></tr></table></figure><p>按i进行修改，改为：</p><figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs vbnet">config wifi-iface <span class="hljs-comment">&#x27;default_radio0&#x27;</span><br>        <span class="hljs-keyword">option</span> device <span class="hljs-comment">&#x27;radio0&#x27;</span><br>        <span class="hljs-keyword">option</span> network <span class="hljs-comment">&#x27;wwan&#x27;</span><br>        <span class="hljs-keyword">option</span> mode <span class="hljs-comment">&#x27;sta&#x27;</span><br>        <span class="hljs-keyword">option</span> ssid <span class="hljs-comment">&#x27;kunjinkao&#x27;</span><br>        <span class="hljs-keyword">option</span> encryption <span class="hljs-comment">&#x27;psk2&#x27;</span><br>        <span class="hljs-keyword">option</span> <span class="hljs-keyword">key</span> <span class="hljs-comment">&#x27;5896324ren&#x27;</span><br></code></pre></td></tr></table></figure><p>按<code>esc</code> 后<code>:wq</code>保存退出</p><h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arduino">vi /etc/config/network<br></code></pre></td></tr></table></figure><p>在末尾添加：</p><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs angelscript">config <span class="hljs-keyword">interface</span> &#x27;<span class="hljs-symbol">wwan</span>&#x27;<br>        <span class="hljs-symbol">option</span> <span class="hljs-symbol">proto</span> &#x27;<span class="hljs-symbol">dhcp</span>&#x27;<br></code></pre></td></tr></table></figure><p>按<code>esc</code> 后<code>:wq</code>保存退出</p><h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><p>依次输入</p><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs swift">wifi down<br>wifi up<br><span class="hljs-regexp">/etc/</span><span class="hljs-keyword">init</span>.d<span class="hljs-operator">/</span>network restart<br></code></pre></td></tr></table></figure><p>可ping测试，ping通则连上</p><h3 id="安装usb网卡驱动"><a href="#安装usb网卡驱动" class="headerlink" title="*安装usb网卡驱动"></a>*安装usb网卡驱动</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs cmake">opkg update<br>opkg <span class="hljs-keyword">install</span> usbutils<br><br><br>opkg <span class="hljs-keyword">install</span> kmod-usb-net-asix<br>opkg <span class="hljs-keyword">install</span> kmod-usb-net-rtl8152<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>OpenWRT</category>
+      
+      <category>树莓派</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>原创</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2024/09/21/hello-world/"/>
     <url>/2024/09/21/hello-world/</url>
