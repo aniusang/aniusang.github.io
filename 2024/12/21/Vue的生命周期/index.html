@@ -19,25 +19,23 @@
   <meta name="author" content="aniusang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="树莓派openwrt连接热点本文是为已经安装openwrt系统，但未正常配备必须的有线网卡驱动程序的树莓派主板撰写的，连接热点后即可正常上网安装网卡驱动  第一步1vi &#x2F;etc&#x2F;config&#x2F;wireless    按i进行修改，改为： 1234567config wifi-iface &#x27;default_radio0&#x27;        option device &#x27;r">
+    <meta name="description" content="Vue的生命周期一、Vue的生命周期阶段vue生命周期分为四个阶段第一阶段（创建阶段）：beforeCreate，created第二阶段（挂载阶段）：beforeMount（render），mounted第三阶段（更新阶段）：beforeUpdate，updated第四阶段（销毁阶段）：beforeDestroy，destroyed 二、生命周期钩子函数 beforeCreate    官网：在实">
 <meta property="og:type" content="article">
-<meta property="og:title" content="树莓派openwrt连接热点">
-<meta property="og:url" content="http://example.com/2024/09/21/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:title" content="Vue的生命周期">
+<meta property="og:url" content="http://example.com/2024/12/21/Vue%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/index.html">
 <meta property="og:site_name" content="欢迎来到aniusangの个人博客">
-<meta property="og:description" content="树莓派openwrt连接热点本文是为已经安装openwrt系统，但未正常配备必须的有线网卡驱动程序的树莓派主板撰写的，连接热点后即可正常上网安装网卡驱动  第一步1vi &#x2F;etc&#x2F;config&#x2F;wireless    按i进行修改，改为： 1234567config wifi-iface &#x27;default_radio0&#x27;        option device &#x27;r">
+<meta property="og:description" content="Vue的生命周期一、Vue的生命周期阶段vue生命周期分为四个阶段第一阶段（创建阶段）：beforeCreate，created第二阶段（挂载阶段）：beforeMount（render），mounted第三阶段（更新阶段）：beforeUpdate，updated第四阶段（销毁阶段）：beforeDestroy，destroyed 二、生命周期钩子函数 beforeCreate    官网：在实">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/pic/2.jpg">
-<meta property="article:published_time" content="2024-09-21T09:00:21.886Z">
-<meta property="article:modified_time" content="2024-12-20T23:10:15.841Z">
+<meta property="article:published_time" content="2024-12-20T23:12:41.586Z">
+<meta property="article:modified_time" content="2024-12-20T23:21:29.441Z">
 <meta property="article:author" content="aniusang">
-<meta property="article:tag" content="OpenWRT">
-<meta property="article:tag" content="树莓派">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="Vue">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/pic/2.jpg">
   
   
   
-  <title>树莓派openwrt连接热点 - 欢迎来到aniusangの个人博客</title>
+  <title>Vue的生命周期 - 欢迎来到aniusangの个人博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -208,7 +206,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="树莓派openwrt连接热点"></span>
+            <span id="subtitle" data-typed-text="Vue的生命周期"></span>
           
         </div>
 
@@ -224,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          181 字
+          1.2k 字
         
       </span>
     
@@ -235,7 +233,7 @@
         
         
         
-          2 分钟
+          10 分钟
         
       </span>
     
@@ -281,36 +279,46 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">树莓派openwrt连接热点</h1>
+            <h1 id="seo-header">Vue的生命周期</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="树莓派openwrt连接热点"><a href="#树莓派openwrt连接热点" class="headerlink" title="树莓派openwrt连接热点"></a>树莓派<code>openwrt</code>连接热点</h2><p><strong>本文是为已经安装<code>openwrt</code>系统，但未正常配备必须的有线网卡驱动程序的树莓派主板撰写的，连接热点后即可正常上网安装网卡驱动</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/zu1k/blog@0.0.1.2/images/loading.png" srcset="/img/loading.gif" lazyload data-original="/pic/2.jpg"></p>
-<h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arduino">vi /etc/config/wireless<br></code></pre></td></tr></table></figure>
-
-
-
-<p>按i进行修改，改为：</p>
-<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs vbnet">config wifi-iface <span class="hljs-comment">&#x27;default_radio0&#x27;</span><br>        <span class="hljs-keyword">option</span> device <span class="hljs-comment">&#x27;radio0&#x27;</span><br>        <span class="hljs-keyword">option</span> network <span class="hljs-comment">&#x27;wwan&#x27;</span><br>        <span class="hljs-keyword">option</span> mode <span class="hljs-comment">&#x27;sta&#x27;</span><br>        <span class="hljs-keyword">option</span> ssid <span class="hljs-comment">&#x27;设备热点名称&#x27;</span><br>        <span class="hljs-keyword">option</span> encryption <span class="hljs-comment">&#x27;psk2&#x27;</span><br>        <span class="hljs-keyword">option</span> <span class="hljs-keyword">key</span> <span class="hljs-comment">&#x27;设备热点密码&#x27;</span><br></code></pre></td></tr></table></figure>
-
-<p>按<code>esc</code> 后<code>:wq</code>保存退出</p>
-<h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arduino">vi /etc/config/network<br></code></pre></td></tr></table></figure>
-
-
-
-<p>在末尾添加：</p>
-<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs angelscript">config <span class="hljs-keyword">interface</span> &#x27;<span class="hljs-symbol">wwan</span>&#x27;<br>        <span class="hljs-symbol">option</span> <span class="hljs-symbol">proto</span> &#x27;<span class="hljs-symbol">dhcp</span>&#x27;<br></code></pre></td></tr></table></figure>
-
-<p>按<code>esc</code> 后<code>:wq</code>保存退出</p>
-<h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><p>依次输入</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs swift">wifi down<br>wifi up<br><span class="hljs-regexp">/etc/</span><span class="hljs-keyword">init</span>.d<span class="hljs-operator">/</span>network restart<br></code></pre></td></tr></table></figure>
-
-
-
-<p>可ping测试，ping通则连上</p>
-<h3 id="安装usb网卡驱动"><a href="#安装usb网卡驱动" class="headerlink" title="*安装usb网卡驱动"></a>*安装usb网卡驱动</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs cmake">opkg update<br>opkg <span class="hljs-keyword">install</span> usbutils<br><br><br>opkg <span class="hljs-keyword">install</span> kmod-usb-net-asix<br>opkg <span class="hljs-keyword">install</span> kmod-usb-net-rtl8152<br></code></pre></td></tr></table></figure>
+                <h2 id="Vue的生命周期"><a href="#Vue的生命周期" class="headerlink" title="Vue的生命周期"></a><code>Vue</code>的生命周期</h2><h3 id="一、Vue的生命周期阶段"><a href="#一、Vue的生命周期阶段" class="headerlink" title="一、Vue的生命周期阶段"></a>一、<code>Vue</code>的生命周期阶段</h3><p>vue生命周期分为四个阶段<br>第一阶段（创建阶段）：<code>beforeCreate</code>，<code>created</code><br>第二阶段（挂载阶段）：<code>beforeMount（render）</code>，<code>mounted</code><br>第三阶段（更新阶段）：<code>beforeUpdate</code>，<code>updated</code><br>第四阶段（销毁阶段）：<code>beforeDestroy</code>，<code>destroyed</code></p>
+<h3 id="二、生命周期钩子函数"><a href="#二、生命周期钩子函数" class="headerlink" title="二、生命周期钩子函数"></a>二、生命周期钩子函数</h3><ol>
+<li><code>beforeCreate</code></li>
+</ol>
+<p>  官网：在实例初始化之后,进行数据侦听和事件&#x2F;侦听器的配置之前同步调用。</p>
+<p>  详细：在这个阶段，数据是获取不到的，并且真实<code>dom</code>元素也是没有渲染出来的</p>
+<ol start="2">
+<li><code>created</code><br>  官网：在实例创建完成后被立即同步调用。在这一步中，实例已完成对选项的处理，意味着以下内容已被配置完毕：数据侦听、计算属性、方法、事件&#x2F;侦听器的回调函数。然而，挂载阶段还没开始，且 <code>$el property </code>目前尚不可用。</li>
+</ol>
+<p>  详细：在这个阶段，可以访问到数据了，但是页面当中真实<code>dom</code>节点还是没有渲染出来，在这个钩子函数里面，可以进行相关初始化事件的绑定、发送请求操作</p>
+<ol start="3">
+<li><code>beforeMount</code><br>  官网：在挂载开始之前被调用：相关的 <code>render</code> 函数首次被调用。</li>
+</ol>
+<p>  详细：代表<code>dom</code>马上就要被渲染出来了，但是却还没有真正的渲染出来，这个钩子函数与<code>created</code>钩子函数用法基本一致，可以进行相关初始化事件的绑定、发送<code>ajax</code>操作</p>
+<ol start="4">
+<li><code>mounted</code><br>  官网：实例被挂载后调用，这时 <code>el</code> 被新创建的<code>vm.$el</code>替换了。如果根实例挂载到了一个文档内的元素上，当 <code>mounted </code>被调用时<code>vm.$el</code>也在文档内。<br>  注意 <code>mounted</code> 不会保证所有的子组件也都被挂载完成。如果你希望等到整个视图都渲染完毕再执行某些操作，可以在 <code>mounted</code> 内部使用 <code>vm.$nextTick</code>：</li>
+</ol>
+<p>  详细：挂载阶段的最后一个钩子函数,数据挂载完毕，真实<code>dom</code>元素也已经渲染完成了,这个钩子函数内部可以做一些实例化相关的操作</p>
+<ol start="5">
+<li><code>beforeUpdate</code><br>  官网：在数据发生改变后，<code>DOM</code> 被更新之前被调用。这里适合在现有 <code>DOM</code> 将要被更新之前访问它，比如移除手动添加的事件监听器。</li>
+</ol>
+<p>  详细：这个钩子函数初始化的不会执行,当组件挂载完毕的时候，并且当数据改变的时候，才会立马执行,这个钩子函数获取<code>dom</code>的内容是更新之前的内容</p>
+<ol start="6">
+<li><code>updated</code><br>官网：在数据更改导致的虚拟<code> DOM</code> 重新渲染和更新完毕之后被调用。<br>当这个钩子被调用时，组件 <code>DOM</code> 已经更新，所以你现在可以执行依赖于<code> DOM</code> 的操作。然而在大多数情况下，你应该避免在此期间更改状态。如果要相应状态改变，通常最好使用计算属性或<code> watcher</code> 取而代之。</li>
+</ol>
+<p>详细：这个钩子函数获取<code>dom</code>的内容是更新之后的内容生成新的虚拟<code>dom</code>，新的虚拟<code>dom</code>与之前的虚拟<code>dom</code>进行比对，差异之后，就会进行真实<code>dom</code>渲染。在<code>updated</code>钩子函数里面就可以获取到因<code>diff</code>算法比较差异得出来的真实<code>dom</code>渲染了。</p>
+<ol start="7">
+<li><code>beforeDestroy</code><br>  官网：实例销毁之前调用。在这一步，实例仍然完全可用。</li>
+</ol>
+<p>  详细：当组件销毁的时候，就会触发这个钩子函数代表销毁之前，可以做一些善后操作,可以清除一些初始化事件、定时器相关的东西。</p>
+<ol start="8">
+<li><code>destroyed</code><br>  官网：实例销毁后调用。该钩子被调用后，对应 Vue 实例的所有指令都被解绑，所有的事件监听器被移除，所有的子实例也都被销毁。</li>
+</ol>
+<p>  详细：<code>Vue</code>实例失去活性，完全丧失功能</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;template&gt;<br>  &lt;div id=&quot;app&quot;&gt;<br>    &lt;p id=&quot;box&quot;&gt;&#123;&#123;msg&#125;&#125;&lt;/p&gt;<br>    &lt;button @click=&quot;change&quot;&gt;更新&lt;/button&gt;<br>  &lt;/div&gt;<br>&lt;/template&gt;<br><br>&lt;script&gt;<br>export default &#123;<br>  data () &#123;<br>    return &#123;<br>      msg: &#x27;hello&#x27;<br>    &#125;<br>  &#125;,<br>  methods: &#123;<br>    change () &#123;<br>      this.msg = &#x27;hello world&#x27;<br>    &#125;<br>  &#125;,<br>  beforeCreate () &#123;<br>    console.log(&#x27;----------------&gt;beforeCreate&#x27;)<br>    console.log(this.msg, document.getElementById(&#x27;box&#x27;))<br>  &#125;,<br>  created () &#123;<br>    console.log(&#x27;----------------&gt;created&#x27;)<br>    console.log(this.msg, document.getElementById(&#x27;box&#x27;))<br>  &#125;,<br>  beforeMount () &#123;<br>    console.log(&#x27;----------------&gt;beforeMount&#x27;)<br>    console.log(this.msg, document.getElementById(&#x27;box&#x27;))<br>  &#125;,<br>  mounted () &#123;<br>    console.log(&#x27;----------------&gt;mounted&#x27;)<br>    console.log(this.msg, document.getElementById(&#x27;box&#x27;))<br>  &#125;,<br>  beforeUpdate () &#123;<br>    console.log(&#x27;----------------&gt;beforeUpdate&#x27;)<br>    console.log(this.$el.innerHTML)<br>    console.log(this.msg, document.getElementById(&#x27;box&#x27;))<br>  &#125;,<br>  updated () &#123;<br>    console.log(&#x27;----------------&gt;updated&#x27;)<br>    console.log(this.$el.innerHTML)<br>    console.log(this.msg, document.getElementById(&#x27;box&#x27;))<br>  &#125;<br>&#125;<br>&lt;/script&gt;<br></code></pre></td></tr></table></figure>
 
 
                 
@@ -324,9 +332,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/OpenWRT/" class="print-no-link">#OpenWRT</a>
+        <a href="/tags/JavaScript/" class="print-no-link">#JavaScript</a>
       
-        <a href="/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/" class="print-no-link">#树莓派</a>
+        <a href="/tags/Vue/" class="print-no-link">#Vue</a>
       
     </div>
   
@@ -338,8 +346,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>树莓派openwrt连接热点</div>
-      <div>http://example.com/2024/09/21/测试文章/</div>
+      <div>Vue的生命周期</div>
+      <div>http://example.com/2024/12/21/Vue的生命周期/</div>
     </div>
     <div class="license-meta">
       
@@ -351,7 +359,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年9月21日</div>
+          <div>2024年12月21日</div>
         </div>
       
       
@@ -383,15 +391,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/12/21/%E6%8C%87%E9%92%88%E6%8E%A2%E7%A9%B6/" title="指针探究">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">指针探究</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2024/12/21/%E9%97%AD%E5%8C%85/" title="闭包">
+                        <span class="hidden-mobile">闭包</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
